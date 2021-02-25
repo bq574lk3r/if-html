@@ -1,0 +1,57 @@
+header{
+    height: 100vh;
+}
+body{
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+}
+.offer-title{
+    font-family: "Roboto-medium", Roboto, sans-serif;
+    font-style: normal;
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 120px;
+    text-align: center;
+}
+.offer-line{
+    width: 100%;
+    margin-top: 67px;
+}
+hr {
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: #f5bd41;
+    background-color: #f5bd41;
+    height: 4px;
+}
+.offer-buttons{
+    margin-top: 93px;
+    height: 450px;
+    width: 100%;
+    text-align: center;
+}
+.offer{
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+    margin-top: 0;
+
+}
+.offer-text{
+    display: block;
+    font-family: "Roboto Light", Roboto, sans-serif;
+    font-style: normal;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 64px;
+}
+.offer-img-headphones, .offer-img-communication, .offer-img-booking, .offer-img-like{
+    display: table-cell;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
