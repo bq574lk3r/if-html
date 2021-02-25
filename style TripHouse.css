@@ -23,6 +23,7 @@ hr {
     margin-left: auto;
     margin-right: auto;
     border-color: #f5bd41;
+    border-radius: 0;
     background-color: #f5bd41;
     height: 4px;
 }
@@ -37,7 +38,6 @@ hr {
     text-align: center;
     width: 20%;
     margin-top: 0;
-
 }
 .offer-text{
     display: block;
@@ -48,7 +48,7 @@ hr {
     text-align: center;
     margin-top: 64px;
 }
-.offer-img-headphones, .offer-img-communication, .offer-img-booking, .offer-img-like{
+.offer-img{
     display: table-cell;
     margin-left: auto;
     margin-right: auto;
