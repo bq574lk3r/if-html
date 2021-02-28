@@ -1,35 +1,20 @@
 @import "fonts.css";
+*{
+    font-family: "Roboto-medium", Roboto, sans-serif;
+}
 body{
     margin: 0;
-    box-sizing: border-box;
-    border: none;
-}
-footer{
-    box-sizing: border-box;
-    background:rgba(16, 54, 124, 1) ;
-    height: 630px;
-    font-family: "Roboto", Roboto, sans-serif;
-    font-weight: 400;
-    color: white;
-    padding-top: 120px;
-    padding-left: 105px;
-
 }
 .offer-title{
-    font-family: "Roboto-medium", Roboto, sans-serif;
-    font-style: normal;
     font-size: 40px;
     color: rgba(56, 56, 56, 1);
     font-weight: 500;
     margin-top: 120px;
     text-align: center;
 }
-.offer-line{
-    width: 100%;
-    margin-top: 67px;
-}
 hr {
     width: 100px;
+    margin-top: 65px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 0;
@@ -38,21 +23,16 @@ hr {
     border: none #f5bd41;
 }
 .offer-buttons{
-    margin-top: 93px;
+    margin-top: 95px;
     height: 450px;
-    width: 100%;
     text-align: center;
 }
 .offer{
     display: inline-block;
-    text-align: center;
     width: 22%;
-    margin-top: 0;
 }
 .offer-text{
     display: block;
-    font-family: "Roboto", Roboto, sans-serif;
-    font-style: normal;
     font-size: 24px;
     color: rgba(56, 56, 56, 1);;
     font-weight: normal;
@@ -64,6 +44,14 @@ hr {
     margin-left: auto;
     margin-right: auto;
 }
+footer {
+    background: rgba(16, 54, 124, 1);
+    height: 650px;
+    font-weight: 400;
+    color: white;
+    padding-top: 120px;
+    padding-left: 105px;
+}
 .footer-lists{
     display: flex;
     line-height: 1.4;
@@ -71,12 +59,9 @@ hr {
     align-items:flex-start
 }
 .footer-list{
-    display: block;
     width: 35%;
 }
 b{
-    font-family: "Roboto-medium", Roboto, sans-serif;
-    font-style: normal;
     font-weight: 500;
 }
 .footer-copywriting{
