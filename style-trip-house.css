@@ -1,0 +1,71 @@
+@import "fonts.css";
+*{
+    font-family: "Roboto-medium", Roboto, sans-serif;
+}
+body{
+    margin: 0;
+}
+.offer-title{
+    font-size: 40px;
+    color: rgba(56, 56, 56, 1);
+    font-weight: 500;
+    margin-top: 120px;
+    text-align: center;
+}
+hr {
+    width: 100px;
+    margin-top: 65px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0;
+    background-color: #f5bd41;
+    height: 4px;
+    border: none #f5bd41;
+}
+.offer-buttons{
+    margin-top: 95px;
+    height: 450px;
+    text-align: center;
+}
+.offer{
+    display: inline-block;
+    width: 22%;
+}
+.offer-text{
+    display: block;
+    font-size: 24px;
+    color: rgba(56, 56, 56, 1);;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 65px;
+}
+.offer-img{
+    display: table-cell;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer {
+    background: rgba(16, 54, 124, 1);
+    height: 650px;
+    font-weight: 400;
+    color: white;
+    padding-top: 120px;
+    padding-left: 105px;
+}
+.footer-lists{
+    display: flex;
+    line-height: 1.4;
+    font-size: 20px;
+    align-items:flex-start
+}
+.footer-list{
+    width: 35%;
+}
+b{
+    font-weight: 500;
+}
+.footer-copywriting{
+    font-size: 14px;
+    margin-top: 50px;
+}
+
