@@ -6,14 +6,61 @@
     <link rel="stylesheet" href="style-trip-house.css">
 </head>
 <body>
-<div>
-    <div class="offer-title">
-        <p>What do we offer</p>
+<div class="home">
+    <div class="home-content">
+        <div class="home-top">
+            <div><img src="icon/logo.svg" alt="logo TripHouse"></div>
+            <div class="home-top-right">
+                <div>
+                    <h3>Stays</h3>
+                    <hr class="home-top-line">
+                </div>
+                <div><h3>Attractions</h3></div>
+                <div><img src="icon/night.svg" alt="night-mode"></div>
+                <div><img src="icon/account.svg" alt="account-circle"></div>
+            </div>
+        </div>
+        <div class="home-title">
+            <h1>
+                Discover stays<br>
+                to live, work or just relax
+            </h1>
+        </div>
+        <div class="home-label-search"><label for="destination">Your destination or hotel name</label>
+            <label for="date">Check-in — Check-out</label></div>
+        <div class="home-form">
+            <fieldset>
+                <form>
+                    <div class="input-destination">
+                        <input id="destination" type="text" name="destination" placeholder="Destination"
+                               data-testid="destination-input">
+                    </div>
+                    <div>
+                        <input class="input-date" id="date" type="date" name="calendar" placeholder="Date">
+                    </div>
+                    <div class="input-room">
+                        <label for="room"></label>
+                        <input id="room" type="text" name="room" placeholder="Room">
+                    </div>
+                    <div class="input-button">
+                        <button type="submit">Search</button>
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+        <div class="home-apps">
+            <div>
+                <img class="a-store" src="icon/astore.svg" alt="apps">
+                <img src="icon/gplay.svg" alt="apps">
+            </div>
+        </div>
     </div>
-    <div class="offer-line">
-        <hr>
-    </div>
-    <div class="offer-buttons">
+</div>
+<h2>
+    What do we offer
+</h2>
+<hr class="offer-line">
+<div class="offer-buttons">
     <div class="offer">
         <img class="offer-img" src="icon/headphones.svg" alt="headphones">
         <p class="offer-text">Support 24/7</p>
@@ -30,20 +77,19 @@
         <img class="offer-img" src="icon/like.svg" alt="thumb up">
         <p class="offer-text">Real guest reviews</p>
     </div>
-    </div>
 </div>
 </body>
 <footer>
-<div>
-    <div class="footer-lists">
-        <div class="footer-list">
+    <div>
+        <div class="footer-lists">
+            <div class="footer-list">
                 <p><b>About</b></p>
                 <p>How TripHouse works</p>
                 <p>Careers</p>
                 <p>Privacy</p>
                 <p>Terms</p>
-        </div>
-        <div class="footer-list">
+            </div>
+            <div class="footer-list">
                 <p><b>Property types</b></p>
                 <p>Guest houses</p>
                 <p>Hotels</p>
@@ -51,16 +97,16 @@
                 <p>Villas</p>
                 <p>Holiday homes</p>
                 <p>Hostels</p>
-        </div>
-        <div class="footer-list">
+            </div>
+            <div class="footer-list">
                 <p><b>Support</b></p>
                 <p>Contact Customer Service</p>
                 <p>FAQ</p>
+            </div>
+        </div>
+        <div class="footer-copywriting">
+            <p>&copy; 2020 TripHouse, Inc. All rights reserved</p>
         </div>
     </div>
-    <div class="footer-copywriting">
-        <p>&copy; 2020 TripHouse, Inc. All rights reserved</p>
-    </div>
-</div>
 </footer>
 </html>
