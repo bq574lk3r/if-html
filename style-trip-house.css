@@ -32,100 +32,111 @@ body{
     border: none;
     margin-left: auto;
     margin-right: auto;
-    margin-top:0;
     font-family: "Roboto-medium", Roboto, sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 .home{
-    min-height: 100vh;
     background-image:url("./img/background.jpg");
     padding-left: 105px;
     padding-right: 105px;
+    padding-top: 0;
     background-repeat: no-repeat;
     background-position: top;
-    background-size: 150%;
-    background-clip:border-box;
+    background-size: cover;
+    background-clip: border-box;
     margin-left: auto;
     margin-right: auto;
 }
+.home-hv{
+    height: 100vh;
+    max-height: 900px;
+    max-width:1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-bottom: 10px;
+
+}
 .home-label-search{
-    width:650px;
-    display: flex;
     margin-left: 10px;
     margin-bottom: 24px;
-    justify-content: space-between;
     font-family: "Roboto-medium", Roboto, sans-serif;
     font-weight: 400;
     font-size: 18px;
     color: white;
 }
-fieldset{
+.home-inputes{
+    display:inline-grid;
+    grid-template-columns: 460px 1fr 1fr 200px;
+    grid-template-rows: 40px 1fr;
+}
+.input-label-1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.input-label-2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.home-form{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    display: grid;
+    grid-template-columns: 460px 1fr 1fr 200px;
     background: white;
+    border-radius:8px;
+    border-style: none;
+    padding: 0;
+}
+input{
+    box-sizing: border-box;
+    height: 60px;
+    width: 100%;
     border-style: none;
     border-radius: 8px;
-    padding: 0;
-    height:border-box;
+    padding-left: 10px;
+    font-family: "Roboto", Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
 }
-form{
-    display:flex;
-    justify-content: space-between;
-    margin-top:0;
-    margin-bottom: 0;
-    border-radius:8px;
+input:hover{
+    border-style: solid;
+    border-color: #f5bd41;
+    border-width: 3px;
 }
-button{
+.input-button{
     font-family: "Roboto-medium", Roboto, sans-serif;
     font-weight: 500;
     font-size: 24px;
-    height: 60px;
-    width: 200px;
-    background:rgba(48, 119, 198, 1);
     color: white;
-    border-style: none;
-    border-radius: 8px;
+    height:100%;
+    width:100%;
+    background: rgba(48, 119, 198, 1);
 }
-input{
-    padding: 0;
-    font-family: "Roboto-medium", Roboto, sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    margin-top: 0;
-    height: 100%;
-    border-style: none;
-}
-.input-destination{
-    height: 60px;
-    width: 460px;
-    margin-left: 24px;
-}
-.input-date{
-    height: 54px;
-    width: 260px;
-    border-radius: 8px;
-    border-color: #f5bd41;
+.input-button:hover {
+    border-style: solid;
+    background:rgba(16, 54, 124, 1) ;
+    border-color: rgba(16, 54, 124, 1);
     border-width: 3px;
-    border-style: solid ;
-}
-.input-room{
-    width: 330px;
-    margin-left: 24px;
-
 }
 .home-content{
     display: flex;
-    height: 100vh;
+    height: calc(100% - 55px);
     flex-direction: column;
-    max-width: 1400px;
+    justify-content: space-evenly;
     margin-left: auto;
     margin-right: auto;
 }
 .home-top{
-    max-width: 1400px;
-    margin-top: 30px;
     display: flex;
     justify-content: space-between;
-    flex-grow:1;
     color: white;
 }
 .home-top-right{
@@ -138,16 +149,9 @@ input{
     margin-top:5px;
     width: 50px;
 }
-.home-title{
-    display: flex;
-    align-items: center;
-    flex-grow:1;
-}
 .home-apps {
     display: flex;
     justify-content:center;
-    align-items: center;
-    flex-grow:1;
 }
 .a-store{
     margin-right: 15px;
@@ -156,11 +160,11 @@ input{
     width: 100px;
 }
 .offer-buttons{
+    max-width:1440px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 93px;
     height: 450px;
-    max-width: 1400px;
     text-align: center;
     display: flex;
     align-items:baseline;
@@ -183,7 +187,7 @@ footer {
     padding-left: 105px;
 }
 .footer-lists{
-    max-width: 1400px;
+    max-width:1440px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -199,7 +203,7 @@ b{
     font-weight: 500;
 }
 .footer-copywriting{
-    max-width: 1400px;
+    max-width:1440px;
     margin-left: auto;
     margin-right: auto;
     font-size: 14px;

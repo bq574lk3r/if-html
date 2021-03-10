@@ -7,7 +7,7 @@
 </head>
 <body>
 <div class="home">
-    <div class="home-content">
+    <div class="home-hv">
         <div class="home-top">
             <div><img src="icon/logo.svg" alt="logo TripHouse"></div>
             <div class="home-top-right">
@@ -20,38 +20,57 @@
                 <div><img src="icon/account.svg" alt="account-circle"></div>
             </div>
         </div>
-        <div class="home-title">
-            <h1>
-                Discover stays<br>
-                to live, work or just relax
-            </h1>
-        </div>
-        <div class="home-label-search"><label for="destination">Your destination or hotel name</label>
-            <label for="date">Check-in — Check-out</label></div>
-        <div class="home-form">
-            <fieldset>
-                <form>
-                    <div class="input-destination">
-                        <input id="destination" type="text" name="destination" placeholder="Destination"
-                               data-testid="destination-input">
-                    </div>
+        <div class="home-content">
+            <div class="home-title">
+                <h1>
+                    Discover stays<br>
+                    to live, work or just relax
+                </h1>
+            </div>
+            <div class="home-inputes">
+                <div class="input-label-1">
+                    <label class="home-label-search" for="destination">Your destination or hotel name</label>
+                </div>
+                <div class="input-label">
+                    <label class="home-label-search" for="date">Check-in — Check-out</label>
+                </div>
+                <form class="home-form">
                     <div>
-                        <input class="input-date" id="date" type="date" name="calendar" placeholder="Date">
+                        <input
+                                class="input-destination"
+                                id="destination"
+                                type="text"
+                                name="destination"
+                                placeholder="Destination"
+                                value="Minsk">
                     </div>
-                    <div class="input-room">
+                    <div class="input-destination">
+                        <input
+                                class="input-date"
+                                id="date"
+                                type="date"
+                                name="calendar"
+                                placeholder="Date">
+                    </div>
+                    <div class="input-destination">
                         <label for="room"></label>
-                        <input id="room" type="text" name="room" placeholder="Room">
+                        <input
+                                class="input-room"
+                                id="room"
+                                type="text"
+                                name="room"
+                                value="2 Adults — 0 Children — 1 Room">
                     </div>
-                    <div class="input-button">
-                        <button type="submit">Search</button>
+                    <div class="input-destination">
+                        <input class="input-button" type="submit" name="search" value="Search">
                     </div>
                 </form>
-            </fieldset>
-        </div>
-        <div class="home-apps">
-            <div>
-                <img class="a-store" src="icon/astore.svg" alt="apps">
-                <img src="icon/gplay.svg" alt="apps">
+            </div>
+            <div class="home-apps">
+                <div>
+                    <img class="a-store" src="icon/astore.svg" alt="apps">
+                    <img src="icon/gplay.svg" alt="apps">
+                </div>
             </div>
         </div>
     </div>
