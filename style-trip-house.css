@@ -18,6 +18,40 @@ h3{
     font-size: 24px;
     font-weight: 400;
     text-align: center;
+    cursor: pointer;
+}
+a{
+    position: relative;
+    color: white; /*задаём цвет ссылки*/
+    cursor: pointer;
+    line-height: 1; /*задаём высоту строки*/
+    text-decoration: none; /*убираем подчёркивание*/
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+a:hover{
+    border-bottom-color: #f5bd41;
+}
+a:visited{
+    color: white;
+}
+a:active{
+    color: white;
+}
+a:after {
+    display: block;
+    position: center;
+    right: 0;
+    width: 0;
+    height: 4px;
+    background-color: #F5BD41;
+    content: "";
+    transition: width 0.2s ease-out;
+}
+a:hover:after,
+a:focus:after {
+    width: 100%;
 }
 hr{
     margin-left: auto;
@@ -67,8 +101,8 @@ body{
     color: white;
 }
 .home-inputes{
-    display:inline-grid;
-    grid-template-columns: 460px 1fr 1fr 200px;
+    display:grid;
+    grid-template-columns: 35% 20% 30% 15%;
     grid-template-rows: 40px 1fr;
 }
 .input-label-1{
@@ -87,9 +121,10 @@ body{
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 2;
-    grid-row-end: 2;
+    grid-row-end: 3;
     display: grid;
-    grid-template-columns: 460px 1fr 1fr 200px;
+    grid-template-columns: 35% 10% 10% 30% 15%;
+    grid-template-rows: 1fr;
     background: white;
     border-radius:8px;
     border-style: none;
@@ -111,6 +146,15 @@ input:hover{
     border-color: #f5bd41;
     border-width: 3px;
 }
+input:focus{
+    border-style: solid;
+    border-color: #f5bd41;
+    border-width: 3px;
+    outline: none;
+}
+.input-date{
+    cursor: pointer;
+}
 .input-button{
     font-family: "Roboto-medium", Roboto, sans-serif;
     font-weight: 500;
@@ -120,11 +164,12 @@ input:hover{
     width:100%;
     background: rgba(48, 119, 198, 1);
 }
-.input-button:hover {
+.input-button:hover{
     border-style: solid;
     background:rgba(16, 54, 124, 1) ;
     border-color: rgba(16, 54, 124, 1);
     border-width: 3px;
+    cursor: pointer;
 }
 .home-content{
     display: flex;
@@ -142,12 +187,20 @@ input:hover{
 .home-top-right{
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     width: 300px;
 }
 .home-top-line{
     margin-top:5px;
-    width: 50px;
+    width:100%;
+}
+.home-top-text:active{
+    border-bottom-color: #f5bd41;
+    border-width:4px;
+}
+.home-top-text .home-top-line:hover{
+    margin-top:5px;
+    width: calc(100% - 10px);
 }
 .home-apps {
     display: flex;
