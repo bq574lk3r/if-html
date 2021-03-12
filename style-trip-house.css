@@ -22,10 +22,10 @@ h3{
 }
 a{
     position: relative;
-    color: white; /*задаём цвет ссылки*/
+    color: white;
     cursor: pointer;
-    line-height: 1; /*задаём высоту строки*/
-    text-decoration: none; /*убираем подчёркивание*/
+    line-height: 1;
+    text-decoration: none;
     font-size: 24px;
     font-weight: 400;
     text-align: center;
@@ -64,6 +64,7 @@ hr{
 body{
     box-sizing: border-box;
     border: none;
+    margin-top: 0;
     margin-left: auto;
     margin-right: auto;
     font-family: "Roboto-medium", Roboto, sans-serif;
@@ -130,7 +131,7 @@ body{
     border-style: none;
     padding: 0;
 }
-input{
+select, input{
     box-sizing: border-box;
     height: 60px;
     width: 100%;
@@ -141,12 +142,12 @@ input{
     font-weight: 400;
     font-size: 18px;
 }
-input:hover{
+select, input:hover{
     border-style: solid;
     border-color: #f5bd41;
     border-width: 3px;
 }
-input:focus{
+select, input:focus{
     border-style: solid;
     border-color: #f5bd41;
     border-width: 3px;
@@ -171,6 +172,23 @@ input:focus{
     border-width: 3px;
     cursor: pointer;
 }
+/*
+.room-otkr{
+    position: relative
+}
+.spisok-skr{
+    display: none;
+    position: absolute;
+    border: none;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.1);
+    background: white;
+}
+.room-otkr:hover +.spisok-skr{
+    display: block;
+    z-index: 999;
+
+}
+*/
 .home-content{
     display: flex;
     height: calc(100% - 55px);
@@ -189,18 +207,6 @@ input:focus{
     justify-content: space-between;
     align-items: center;
     width: 300px;
-}
-.home-top-line{
-    margin-top:5px;
-    width:100%;
-}
-.home-top-text:active{
-    border-bottom-color: #f5bd41;
-    border-width:4px;
-}
-.home-top-text .home-top-line:hover{
-    margin-top:5px;
-    width: calc(100% - 10px);
 }
 .home-apps {
     display: flex;
@@ -262,3 +268,4 @@ b{
     font-size: 14px;
     margin-top: 50px;
 }
+

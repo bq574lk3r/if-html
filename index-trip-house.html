@@ -12,10 +12,11 @@
             <div><img src="icon/logo.svg" alt="logo TripHouse"></div>
             <div class="home-top-right">
                 <div>
-                    <h3>Stays</h3>
-                    <hr class="home-top-line">
+                    <a class="home-top-text" href="#">Stays</a>
                 </div>
-                <div><h3>Attractions</h3></div>
+                <div>
+                    <a class="home-top-text2" href="#">Attractions</a>
+                </div>
                 <div><img src="icon/night.svg" alt="night-mode"></div>
                 <div><img src="icon/account.svg" alt="account-circle"></div>
             </div>
@@ -32,38 +33,46 @@
                     <label class="home-label-search" for="destination">Your destination or hotel name</label>
                 </div>
                 <div class="input-label">
-                    <label class="home-label-search" for="date">Check-in — Check-out</label>
+                    <label class="home-label-search" for="date-in">Check-in — Check-out</label>
+                    <label class="home-label-search" for="date-out"></label>
                 </div>
                 <form class="home-form">
                     <div>
-                        <input
-                                class="input-destination"
-                                id="destination"
-                                type="text"
-                                name="destination"
-                                placeholder="Destination"
-                                value="Minsk">
+                        <input class="input-destination" id="destination" type="text" name="destination"
+                               placeholder="Destination"
+                               value="Minsk">
                     </div>
-                    <div class="input-destination">
-                        <input
-                                class="input-date"
-                                id="date"
-                                type="date"
-                                name="calendar"
-                                placeholder="Date">
+                    <div>
+                        <input class="input-date" id="date-in" type="date" name="calendar" placeholder="Date">
                     </div>
-                    <div class="input-destination">
+                    <div>
+                        <input class="input-date" id="date-out" type="date" name="calendar" placeholder="Date">
+                    </div>
+                    <div class="room">
                         <label for="room"></label>
-                        <input
-                                class="input-room"
-                                id="room"
-                                type="text"
-                                name="room"
-                                value="2 Adults — 0 Children — 1 Room">
+                        <select name="" id="room">
+                            <option value="1">Adults</option>
+                            <option value="2">Children</option>
+                            <option value="3">Room</option>
+                        </select>
+                        <!--<div class="room-otkr">
+                            <span class="f-search-adults" id="adults">1</span>&nbsp;Adults -&nbsp;
+                            <span class="f-search-children" id="children">0</span>&nbsp;Chieldren
+                        </div>
+                        <div class="spisok-skr">
+                            <div>bla-bla-bla</div>
+                            <div>
+                                1<br>
+                                2<br>
+                                3<br>
+                                4<br>
+                            </div>
+                        </div>-->
                     </div>
-                    <div class="input-destination">
+                    <div>
                         <input class="input-button" type="submit" name="search" value="Search">
                     </div>
+
                 </form>
             </div>
             <div class="home-apps">
