@@ -6,19 +6,33 @@
     <link rel="stylesheet" href="style-trip-house.css">
 </head>
 <body>
+<svg class="svg" xmlns="http://www.w3.org/2000/svg" style="position:absolute;visibility:hidden">
+    <symbol id="headphones" viewBox="0 0 76 92">
+        <path d="M67.1667 54.3334V71H58.8333V54.3334H67.1667ZM17.1667 54.3334V71H13C10.7083 71 8.83333 69.125 8.83333 66.8334V54.3334H17.1667ZM38 0.166687C17.2917 0.166687 0.5 16.9584 0.5 37.6667V66.8334C0.5 73.75 6.08333 79.3334 13 79.3334H25.5V46H8.83333V37.6667C8.83333 21.5417 21.875 8.50002 38 8.50002C54.125 8.50002 67.1667 21.5417 67.1667 37.6667V46H50.5V79.3334H67.1667V83.5H38V91.8334H63C69.9167 91.8334 75.5 86.25 75.5 79.3334V37.6667C75.5 16.9584 58.7083 0.166687 38 0.166687Z" fill="var(--primary)"/>
+    </symbol>
+    <symbol id="communication" viewBox="0 0 84 84">
+        <path d="M54.5002 8.66665V37.8333H13.5418L8.66683 42.7083V8.66665H54.5002ZM58.6668 0.333313H4.50016C2.2085 0.333313 0.333496 2.20831 0.333496 4.49998V62.8333L17.0002 46.1666H58.6668C60.9585 46.1666 62.8335 44.2916 62.8335 42V4.49998C62.8335 2.20831 60.9585 0.333313 58.6668 0.333313ZM79.5002 17H71.1668V54.5H17.0002V62.8333C17.0002 65.125 18.8752 67 21.1668 67H67.0002L83.6668 83.6667V21.1666C83.6668 18.875 81.7918 17 79.5002 17Z" fill="#3077C6"/>
+    </symbol>
+    <symbol id="booking" viewBox="0 0 100 68">
+        <path d="M16.6667 9.00002H91.6667V0.666687H16.6667C12.0833 0.666687 8.33333 4.41669 8.33333 9.00002V54.8333H0V67.3333H58.3333V54.8333H16.6667V9.00002ZM95.8333 17.3334H70.8333C68.5417 17.3334 66.6667 19.2084 66.6667 21.5V63.1667C66.6667 65.4583 68.5417 67.3333 70.8333 67.3333H95.8333C98.125 67.3333 100 65.4583 100 63.1667V21.5C100 19.2084 98.125 17.3334 95.8333 17.3334ZM91.6667 54.8333H75V25.6667H91.6667V54.8333Z" fill="var(--primary)"/>
+    </symbol>
+    <symbol id="like" viewBox="0 0 92 84">
+        <path d="M83.5001 29.3334H57.2084L61.1667 10.2917L61.2917 8.95835C61.2917 7.25002 60.5834 5.66669 59.4584 4.54169L55.0417 0.166687L27.6251 27.625C26.0834 29.125 25.1667 31.2084 25.1667 33.5V75.1667C25.1667 79.75 28.9167 83.5 33.5001 83.5H71.0001C74.4584 83.5 77.4167 81.4167 78.6667 78.4167L91.2501 49.0417C91.6251 48.0834 91.8334 47.0834 91.8334 46V37.6667C91.8334 33.0834 88.0834 29.3334 83.5001 29.3334ZM83.5001 46L71.0001 75.1667H33.5001V33.5L51.5834 15.4167L46.9584 37.6667H83.5001V46ZM0.166748 33.5H16.8334V83.5H0.166748V33.5Z" fill="var(--primary)"/>
+    </symbol>
+</svg>
 <div class="home">
     <div class="home-hv">
         <div class="home-top">
             <div><img src="icon/logo.svg" alt="logo TripHouse"></div>
             <div class="home-top-right">
-                <div>
-                    <a class="home-top-text" href="#">Stays</a>
+                <div class="home-top-text">
+                    <a href="#">Stays</a>
+                    <a href="#">Attractions</a>
                 </div>
-                <div>
-                    <a class="home-top-text2" href="#">Attractions</a>
+                <div class="home-top-ico">
+                    <div><img src="icon/night.svg" alt="night-mode"></div>
+                    <div><img src="icon/account.svg" alt="account-circle"></div>
                 </div>
-                <div><img src="icon/night.svg" alt="night-mode"></div>
-                <div><img src="icon/account.svg" alt="account-circle"></div>
             </div>
         </div>
         <div class="home-content">
@@ -33,20 +47,21 @@
                     <label class="home-label-search" for="destination">Your destination or hotel name</label>
                 </div>
                 <div class="input-label">
-                    <label class="home-label-search" for="date-in">Check-in — Check-out</label>
-                    <label class="home-label-search" for="date-out"></label>
+                    <span class="home-label-search">Check-in — Check-out</span>
                 </div>
                 <form class="home-form">
                     <div>
-                        <input class="input-destination" id="destination" type="text" name="destination"
+                        <input class="input-destination input" id="destination" type="text" name="destination"
                                placeholder="Destination"
                                value="Minsk">
                     </div>
                     <div>
-                        <input class="input-date" id="date-in" type="date" name="calendar" placeholder="Date">
+                        <label for="date-in"></label>
+                        <input class="input-date input" id="date-in" type="date" name="calendar" placeholder="Date">
                     </div>
                     <div>
-                        <input class="input-date" id="date-out" type="date" name="calendar" placeholder="Date">
+                        <label for="date-out"></label>
+                        <input class="input-date input" id="date-out" type="date" name="calendar" placeholder="Date">
                     </div>
                     <div class="room">
                         <label for="room"></label>
@@ -69,10 +84,7 @@
                             </div>
                         </div>-->
                     </div>
-                    <div>
-                        <input class="input-button" type="submit" name="search" value="Search">
-                    </div>
-
+                    <button class="input-button" type="submit" name="search">Search</button>
                 </form>
             </div>
             <div class="home-apps">
@@ -84,25 +96,36 @@
         </div>
     </div>
 </div>
-<h2>
+<h2 class="offer-title">
     What do we offer
 </h2>
-<hr class="offer-line">
 <div class="offer-buttons">
     <div class="offer">
-        <img class="offer-img" src="icon/headphones.svg" alt="headphones">
+        <!--<img class="offer-img" src="icon/headphones.svg" alt="headphones">-->
+        <svg class="offer-ico" width="76" height="92">
+            <use href="#headphones"/>
+        </svg>
         <p class="offer-text">Support 24/7</p>
     </div>
     <div class="offer">
-        <img class="offer-img" src="icon/communication.svg" alt="message">
+        <!--<img class="offer-img" src="icon/communication.svg" alt="message">-->
+        <svg class="offer-ico" width="84" height="84">
+            <use href="#communication"/>
+        </svg>
         <p class="offer-text">Communicate directly</p>
     </div>
     <div class="offer">
-        <img class="offer-img" src="icon/booking.svg" alt="notebook">
+        <!--<img class="offer-img" src="icon/booking.svg" alt="notebook">-->
+        <svg class="offer-ico" width="100" height="68">
+            <use href="#booking"/>
+        </svg>
         <p class="offer-text">Book online</p>
     </div>
     <div class="offer">
-        <img class="offer-img" src="icon/like.svg" alt="thumb up">
+        <!--<img class="offer-img" src="icon/like.svg" alt="thumb up">-->
+        <svg class="offer-ico" width="92" height="84">
+            <use href="#like"/>
+        </svg>
         <p class="offer-text">Real guest reviews</p>
     </div>
 </div>

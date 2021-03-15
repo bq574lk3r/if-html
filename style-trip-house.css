@@ -1,4 +1,30 @@
 @import "fonts.css";
+:root{
+    --with-hv: 100hw;
+    --col-1: calc(100% * 1 / 12);
+    --col-2: calc(100% * 2 / 12);
+    --col-3: calc(100% * 3 / 12);
+    --col-4: calc(100% * 4 / 12);
+    --col-5: calc(100% * 5 / 12);
+    --col-6: calc(100% * 6 / 12);
+    --col-7: calc(100% * 7 / 12);
+    --col-8: calc(100% * 8 / 12);
+    --col-9: calc(100% * 9 / 12);
+    --col-10: calc(100% * 10 / 12);
+    --col-11: calc(100% * 11 / 12);
+    --col-12: calc(100% * 12 / 12);
+    --col-13: calc(100% * 13 / 12);
+    --col-14: calc(100% * 14 / 12);
+    --primary: rgba(48, 119, 198, 1);
+    --primary-dark: #10367C;
+    --secondary: #F5BD41;
+    --dark-m1: #121212;
+    --dark-m2: #1D1E1F;
+    --dark-m3: #4D4D4D;
+    --main-stroke: #F3F3F4;
+    --main-text: #383838;
+    --secondary-text: #BFBFBF;
+}
 h1{
     font-size: 50px;
     font-weight: 500;
@@ -13,13 +39,6 @@ h2{
     margin-top: 120px;
     text-align: center;
 }
-h3{
-    display: table-cell;
-    font-size: 24px;
-    font-weight: 400;
-    text-align: center;
-    cursor: pointer;
-}
 a{
     position: relative;
     color: white;
@@ -31,7 +50,7 @@ a{
     text-align: center;
 }
 a:hover{
-    border-bottom-color: #f5bd41;
+    border-bottom-color: var(--secondary);
 }
 a:visited{
     color: white;
@@ -41,25 +60,18 @@ a:active{
 }
 a:after {
     display: block;
-    position: center;
-    right: 0;
+    position: relative;
+    top: 10px;
+    right: calc((100% - (100% - 10px)) / -2);
     width: 0;
     height: 4px;
-    background-color: #F5BD41;
+    background-color: var(--secondary);
     content: "";
     transition: width 0.2s ease-out;
 }
 a:hover:after,
 a:focus:after {
-    width: 100%;
-}
-hr{
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 0;
-    background-color: #f5bd41;
-    height: 4px;
-    border: none #f5bd41;
+    width: calc(100% - 10px)
 }
 body{
     box-sizing: border-box;
@@ -73,8 +85,8 @@ body{
 }
 .home{
     background-image:url("./img/background.jpg");
-    padding-left: 105px;
-    padding-right: 105px;
+    padding-left: var(--col-1);
+    padding-right: var(--col-1);
     padding-top: 0;
     background-repeat: no-repeat;
     background-position: top;
@@ -103,7 +115,7 @@ body{
 }
 .home-inputes{
     display:grid;
-    grid-template-columns: 35% 20% 30% 15%;
+    grid-template-columns: var(--col-4) var(--col-3);
     grid-template-rows: 40px 1fr;
 }
 .input-label-1{
@@ -124,14 +136,14 @@ body{
     grid-row-start: 2;
     grid-row-end: 3;
     display: grid;
-    grid-template-columns: 35% 10% 10% 30% 15%;
+    grid-template-columns: var(--col-4) calc(var(--col-3) / 2) calc(var(--col-3) / 2) var(--col-3) var(--col-2);
     grid-template-rows: 1fr;
     background: white;
     border-radius:8px;
     border-style: none;
     padding: 0;
 }
-select, input{
+select, .input{
     box-sizing: border-box;
     height: 60px;
     width: 100%;
@@ -142,14 +154,14 @@ select, input{
     font-weight: 400;
     font-size: 18px;
 }
-select, input:hover{
+select, .input:hover{
     border-style: solid;
-    border-color: #f5bd41;
+    border-color: var(--secondary);
     border-width: 3px;
 }
-select, input:focus{
+select, .input:focus{
     border-style: solid;
-    border-color: #f5bd41;
+    border-color: var(--secondary);
     border-width: 3px;
     outline: none;
 }
@@ -160,17 +172,23 @@ select, input:focus{
     font-family: "Roboto-medium", Roboto, sans-serif;
     font-weight: 500;
     font-size: 24px;
+    height: 60px;
+    width: 100%;
+    border-style: none;
+    border-radius: 8px;
+    padding-left: 10px;
     color: white;
-    height:100%;
-    width:100%;
-    background: rgba(48, 119, 198, 1);
+    background:var(--primary);
 }
 .input-button:hover{
     border-style: solid;
-    background:rgba(16, 54, 124, 1) ;
-    border-color: rgba(16, 54, 124, 1);
+    background:var(--primary-dark);
+    border-color:var(--primary-dark);
     border-width: 3px;
     cursor: pointer;
+}
+.input-button:focus{
+    outline: none;
 }
 /*
 .room-otkr{
@@ -203,10 +221,25 @@ select, input:focus{
     color: white;
 }
 .home-top-right{
+    padding: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 300px;
+    width: 350px;
+}
+.home-top-text{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+}
+.home-top-ico{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
 }
 .home-apps {
     display: flex;
@@ -215,20 +248,29 @@ select, input:focus{
 .a-store{
     margin-right: 15px;
 }
-.offer-line {
-    width: 100px;
+.offer-title::after {
+    display: block; /* линия чертится снизу */
+    position: relative;/* про позиции почитаешь в лекциях там много их */
+    top: 30px;/* отступ типа как margin-top , только без margin */
+    right: calc((100% - 100px) / -2); /* ну тут типа отступ справа, тут надо вручную формулу придумать что бы отцентрировать*/
+    width: 100px; /* ширина полоски */
+    height: 4px; /* высота полоски */
+    background-color: var(--secondary); /* цвет полоски */
+    content: ""; /* тут можно написать что хочешь текст допустим и его нарисует, но если оставляешь пустое место, то рисует линию*/
 }
 .offer-buttons{
     max-width:1440px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 93px;
-    height: 450px;
+    min-height: 450px;
     text-align: center;
     display: flex;
     align-items:baseline;
     justify-content:space-evenly;
-    flex-basis:100%;
+    flex-wrap: wrap;
+}
+.offer-ico{
 }
 .offer-text{
     font-size: 24px;
@@ -237,7 +279,7 @@ select, input:focus{
 }
 footer {
     box-sizing: border-box;
-    background: rgba(16, 54, 124, 1);
+    background: var(--primary-dark);
     height: 630px;
     font-family: "Roboto", Roboto, sans-serif;
     font-weight: 400;
@@ -268,4 +310,5 @@ b{
     font-size: 14px;
     margin-top: 50px;
 }
+
 
