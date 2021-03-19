@@ -106,10 +106,29 @@
     <symbol id="sm-menu" viewBox="0 0 24 16">
         <path d="M0 16H24V13.3333H0V16ZM0 9.33333H24V6.66667H0V9.33333ZM0 0V2.66667H24V0H0Z" fill="white"/>
     </symbol>
+    <symbol id="arrow" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_d)">
+            <circle cx="24" cy="20" r="20" fill="#F3F3F4"/>
+            <path d="M19.9412 29.8235L26.1 21.6118C26.6333 20.9007 26.6333 19.9229 26.1 19.2118L19.9412 11"
+                  stroke="#383838" stroke-width="2"/>
+        </g>
+        <defs>
+            <filter id="filter0_d" x="0" y="0" width="48" height="48" filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+            </filter>
+        </defs>
+    </symbol>
 </svg>
-<div class="home">
+<section class="home">
     <div class="home-hv">
-        <div class="home-top">
+        <header class="home-top">
             <div>
                 <svg class="home-logo">
                     <use href="#logo"/>
@@ -138,7 +157,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </header>
         <div class="home-content">
             <div class="home-title">
                 <h1>
@@ -189,7 +208,7 @@
             </div>
             <div class="home-apps">
                 <div>
-                    <svg class="g-play"width="135" height="40">
+                    <svg class="g-play" width="135" height="40">
                         <use href="#g-play"/>
                     </svg>
                     <svg class="a-store" width="120" height="40">
@@ -199,8 +218,8 @@
             </div>
         </div>
     </div>
-</div>
-<div class="offer">
+</section>
+<section class="offer">
     <h2 class="offer-title">
         What do we offer
     </h2>
@@ -230,7 +249,42 @@
             <p class="offer-text">Real guest reviews</p>
         </div>
     </div>
-</div>
+</section>
+<section class="houses">
+    <div><h2 class="houses-title">Homes guests loves</h2></div>
+    <div class="houses-cards col-12 col-s-6">
+        <div class="h-card col-3 col-s-3">
+            <img class="houses-img" src="img/hotels/h-leopold.png" alt="hotel Leopold">
+            <div class="h-card-text">
+                <h4>Hotel Leopold</h4>
+                <p class="h-c-text-location">Saint Petersburg, Russia</p>
+            </div>
+        </div>
+        <div class="h-card col-3 col-s-3">
+            <img class="houses-img houses-arrow-s" src="img/hotels/h-sunshine.png" alt="apartment Sunshine">
+            <div class="h-card-text">
+                <h4>Apartment Sunshine</h4>
+                <p class="h-c-text-location">Santa Cruz de Tenerife, Spain</p>
+            </div>
+        </div>
+        <div class="h-card col-3 col-s-0">
+            <img class="houses-img" src="img/hotels/h-kunerad.png" alt="villa Kunerad">
+            <div class="h-card-text">
+                <h4>Villa Kunerad</h4>
+                <p class="h-c-text-location">Vysokie Tatry, Slowakia</p>
+            </div>
+        </div>
+        <div class="h-card col-3 col-s-0">
+                <div class="houses-arrow">
+                    <img class="houses-img houses-img4" src="img/hotels/h-friendship.png" alt="hostel Friendship">
+                </div>
+            <div class="h-card-text">
+                <h4>Hostel Friendship</h4>
+                <p class="h-c-text-location">Berlin, Germany</p>
+            </div>
+        </div>
+    </div>
+</section>
 </body>
 <footer>
     <div class="f-size-content">

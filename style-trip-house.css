@@ -10,6 +10,7 @@
     --dark-m3: #4D4D4D;
     --main-stroke: #F3F3F4;
     --main-text: #383838;
+    --main-bg: #EAF0F9;
     --secondary-text: #BFBFBF;
 }
 
@@ -73,13 +74,20 @@ h2 {
     font-size: 40px;
     color: rgba(56, 56, 56, 1);
     font-weight: 500;
-    margin-top: 120px;
     text-align: center;
 }
 
 h3 {
     font-size: 20px;
     font-weight: 500;
+}
+
+h4 {
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: 400;
+    color: #3077C6;
 }
 
 a {
@@ -173,13 +181,6 @@ body {
 
 }
 
-/*.home-form{
-    display: flex;
-    background: white;
-    border-radius:8px;
-    border-style: none;
-    padding: 0;
-}*/
 .home-form {
     display: flex;
     background: white;
@@ -272,10 +273,12 @@ select, .input:focus {
     justify-content: space-between;
     color: white;
 }
-.home-logo{
+
+.home-logo {
     width: 200px;
     height: 40px;
 }
+
 .home-top-right {
     padding: 0;
     display: flex;
@@ -291,14 +294,17 @@ select, .input:focus {
     align-items: center;
     width: 200px;
 }
-.h-t-ico-night{
+
+.h-t-ico-night {
     width: 30px;
     height: 30px;
 }
-.h-t-ico-account{
+
+.h-t-ico-account {
     width: 40px;
     height: 40px;
 }
+
 .home-top-ico {
     padding: 0;
     display: flex;
@@ -306,9 +312,11 @@ select, .input:focus {
     align-items: center;
     width: 100px;
 }
-.h-top-menu{
+
+.h-top-menu {
     display: none;
 }
+
 .home-apps {
     display: flex;
     justify-content: center;
@@ -318,15 +326,19 @@ select, .input:focus {
     margin-right: 15px;
 }
 
+.offer {
+    padding-top: 10vh;
+}
+
 .offer-title::after {
-    display: block; /* линия чертится снизу */
-    position: relative; /* про позиции почитаешь в лекциях там много их */
-    top: 30px; /* отступ типа как margin-top , только без margin */
-    right: calc((100% - 100px) / -2); /* ну тут типа отступ справа, тут надо вручную формулу придумать что бы отцентрировать*/
-    width: 100px; /* ширина полоски */
-    height: 4px; /* высота полоски */
-    background-color: var(--secondary); /* цвет полоски */
-    content: ""; /* тут можно написать что хочешь текст допустим и его нарисует, но если оставляешь пустое место, то рисует линию*/
+    display: block;
+    position: relative;
+    top: 30px;
+    right: calc((100% - 100px) / -2);
+    width: 100px;
+    height: 4px;
+    background-color: var(--secondary);
+    content: "";
 }
 
 .offer-buttons {
@@ -341,13 +353,75 @@ select, .input:focus {
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-.offer-ico{
-    width:100px;
-    height:100px;
+
+.offer-ico {
+    width: 100px;
+    height: 100px;
 }
+
 .offer-text {
     font-size: 24px;
     color: var(--main-text);
+}
+
+.houses-title {
+    margin-bottom: 10vh;
+}
+
+.houses {
+    max-height: 800px;
+    background-color: var(--main-bg);
+    padding: 10vh var(--col-width);
+    z-index: 3;
+}
+
+.houses-cards {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.h-card {
+    position: relative;
+    z-index: 1;
+    text-align: left;
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 10px;
+    border-color: transparent;
+}
+
+.houses-img {
+    position: relative;
+    vertical-align: top;
+    display: block;
+    width: 100%;
+    z-index: 2;
+}
+
+.h-card-text {
+    text-align: left;
+}
+
+.h-c-text-location {
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--secondary-text);
+}
+
+.houses-arrow:after {
+    display: block;
+    position: relative;
+    text-align: right;
+    top: -200px;
+    right: -25px;
+    z-index: 3;
+    width: 100%;
+    height: 0;
+    content: url("icon/arrow.svg");
 }
 
 footer {
@@ -387,6 +461,10 @@ footer {
         --col-width: calc(100% * 1 / 12);
     }
 
+    .col-s-0 {
+        display: none;
+    }
+
     .col-s-1 {
         width: var(--col-width);
     }
@@ -412,110 +490,161 @@ footer {
     }
 
     /* home */
-    h1{
+    h1 {
         font-size: 30px;
     }
+
     .home {
         background-position: right;
         padding-left: 0;
         padding-right: 0;
     }
+
     .home-hv {
         height: 100vh;
         padding: 15px;
     }
-    .home-logo{
+
+    .home-logo {
         width: 125px;
         height: 25px;
     }
-    .h-top-menu{
+
+    .h-top-menu {
         display: block;
     }
-    .h-t-ico-night{
+
+    .h-t-ico-night {
         width: 16px;
         height: 16px;
     }
-    .h-t-ico-account{
+
+    .h-t-ico-account {
         width: 24px;
         height: 24px;
     }
-    .home-top-text{
+
+    .home-top-text {
         display: none;
     }
-    .home-top-right{
+
+    .home-top-right {
         width: 100px;
     }
-    .home-top-ico{
+
+    .home-top-ico {
         width: 100px;
     }
-    .input-label{
+
+    .input-label {
         display: none;
     }
+
     select, .input {
-        border-style: solid ;
+        border-style: solid;
         border-color: var(--secondary);
         font-size: 15px;
-        border-width:4px;
+        border-width: 4px;
     }
-    .home-form{
+
+    .home-form {
         background-color: var(--secondary);
         padding: 4px;
     }
-    .input-button{
+
+    .input-button {
         border-style: solid;
         border-color: var(--secondary);
         font-size: 19px;
-        border-width:4px;
+        border-width: 4px;
     }
+
     .input-button:hover {
         border-style: solid;
         border-color: var(--secondary);
-        border-width:4px;
+        border-width: 4px;
     }
+
     /* offer */
     h2 {
         margin-top: 24px;
         font-size: 28px;
     }
+
     .offer-text {
         font-size: 15px;
     }
+
     .offer-buttons {
         margin-top: 0;
     }
-    .offer-ico{
-        width:65px;
-        height:65px;
+
+    .offer-ico {
+        width: 65px;
+        height: 65px;
     }
+
     .offer-title::after {
         display: none;
     }
+
+    /* house */
+    h4, .h-c-text-location {
+        font-size: 12px;
+    }
+
+    h4 {
+        margin-top: 5px;
+    }
+
+    .houses-img {
+        width: 150px;
+    }
+
+    .houses-arrow-s::after {
+        display: block;
+        position: relative;
+        text-align: right;
+        top: -20px;
+        right: -5px;
+        z-index: 3;
+        width: 100%;
+        height: 0;
+        content: url("icon/arrow.svg");
+    }
+
     /* footer */
     .footer-logo {
         display: block;
         text-align: center;
     }
-    .f-size-content{
-        padding:0;
+
+    .f-size-content {
+        padding: 0;
     }
+
     footer {
         padding: 40px 70px;
         min-height: 200px;
     }
+
     .footer-lists {
         display: flex;
         justify-content: space-between;
         margin-top: 40px;
     }
+
     h3 {
         text-decoration: underline;
         font-size: 15px;
         text-align: center;
     }
+
     .f-l-content {
         display: none;
     }
-    .footer-copywriting{
+
+    .footer-copywriting {
         font-size: 12px;
         text-align: center;
     }
