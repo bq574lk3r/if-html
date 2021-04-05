@@ -8,7 +8,7 @@
     --dark-mode-1: #121212;
     --dark-mode-2: #1D1E1F;
     --dark-mode-3: #4D4D4D;
-    --main-stroke: #F3F3F4;
+    --main-stroke: #f3f3f4;
     --main-text: #383838;
     --main-bg: #EAF0F9;
     --secondary-text: #BFBFBF;
@@ -96,16 +96,18 @@ h5 {
     color: var(--primary);
 }
 
-#logo, #headphones, #communication, #booking, #like{
+#logo, #headphones, #communication, #booking, #like {
     fill: var(--primary);
 }
 
-#night, #account, #footer-logo, #sm-menu{
+#night, #account, #footer-logo, #sm-menu {
     fill: white;
 }
-#loupe, #x, #account-reviews{
+
+#loupe, #x, #account-reviews {
     fill: var(--secondary-text);
 }
+
 a {
     position: relative;
     color: white;
@@ -448,7 +450,7 @@ body {
     color: var(--secondary-text);
 }
 
-.houses-arrow-up {
+.houses-arrow-up, .dest-arrow-s {
     display: flex;
     justify-content: flex-end;
     right: -20px;
@@ -456,6 +458,7 @@ body {
     width: 100%;
     position: absolute;
     z-index: 2;
+    cursor: pointer;
 }
 
 .houses-arrow {
@@ -480,11 +483,17 @@ body {
 .dest-arrow-down {
     width: 48px;
     transform: scale(-1, 1) rotate(90deg);
+    cursor: pointer;
 }
 
 .dest-arrow {
     width: 48px;
     margin: 0 auto;
+    cursor: pointer;
+}
+
+.dest-arrow-s {
+    display: none;
 }
 
 .dest-buttons {
@@ -510,47 +519,6 @@ body {
     border: none;
     background: var(--primary);
     color: white;
-    cursor: pointer;
-}
-
-.dest-registration {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    padding: 24px;
-    height: 200px;
-    background-color: var(--main-bg);
-}
-
-.dest-registration-left {
-    display: flex;
-    align-items: center;
-}
-
-.dest-registration-ico {
-    width: 90px;
-    height: 90px;
-    margin-right: 24px;
-}
-
-.dest-registration-text {
-    font-size: 24px;
-    font-weight: 500;
-    color: var(--main-text);
-}
-
-.dest-registration-button, .dest-card-button {
-    width: 128px;
-    height: 48px;
-    background-color: white;
-    border-style: solid;
-    border-color: #3077C6;
-    border-radius: 8px;
-    border-width: 1px;
-    font-size: 18px;
-    color: #3077C6;
-    outline: none;
     cursor: pointer;
 }
 
@@ -582,12 +550,53 @@ body {
 }
 
 .dest-registration-button:hover {
-    background-color: #3077C6;
+    background-color: #3077c6;
     color: white;
     cursor: pointer;
 }
 
-.dest-registration-x {
+.rev-registration {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 24px;
+    height: 200px;
+    background-color: var(--main-bg);
+}
+
+.rev-registration-left {
+    display: flex;
+    align-items: center;
+}
+
+.rev-registration-ico {
+    width: 90px;
+    height: 90px;
+    margin-right: 24px;
+}
+
+.rev-registration-text {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--main-text);
+}
+
+.rev-registration-button, .dest-card-button {
+    width: 128px;
+    height: 48px;
+    background-color: white;
+    border-style: solid;
+    border-color: #3077C6;
+    border-radius: 8px;
+    border-width: 1px;
+    font-size: 18px;
+    color: #3077C6;
+    outline: none;
+    cursor: pointer;
+}
+
+.rev-registration-x {
     box-sizing: border-box;
     border-style: solid;
     border-radius: calc(40px / 2);
@@ -597,10 +606,14 @@ body {
     align-self: flex-start;
 }
 
-.dest-registration-x:hover {
+.rev-registration-x:hover {
     border-radius: 20px;
     cursor: pointer;
     border-color: var(--secondary-text);
+}
+
+.rev-registration-ico-s, .rev-registration-s-install {
+    display: none;
 }
 
 .reviews-cards {
@@ -633,6 +646,10 @@ body {
 .rev-card-info-hotel, .rev-card-info-rating {
     margin-top: 24px;
     margin-bottom: 8px;
+}
+
+.rev-card-info-destinations {
+    color: var(--primary);
 }
 
 .reviews-card-img {
@@ -766,7 +783,7 @@ footer {
     font-size: 20px;
 }
 
-.footer-copywriting {
+.footer-copyright {
     font-size: 14px;
     margin-top: 50px;
 }
@@ -810,14 +827,12 @@ footer {
     }
 
     .home {
-        background-position: right;
         padding-left: 0;
         padding-right: 0;
     }
 
     .home-width {
-        height: 100vh;
-        padding: 15px;
+        padding: 15px 15px 0 15px;
     }
 
     .home-logo {
@@ -940,6 +955,7 @@ footer {
 
     .offer {
         padding-top: 30px;
+        padding-bottom: 30px;
     }
 
     .offer-text {
@@ -960,6 +976,10 @@ footer {
     }
 
     /* house */
+    .houses, .destinations, .reviews-s {
+        padding: 5vh 15px;
+    }
+
     .houses-card {
         text-align: center;
         box-sizing: border-box;
@@ -978,7 +998,7 @@ footer {
         margin-top: 5px;
     }
 
-    .houses-img {
+    .houses-img, .dest-img {
         height: 150px;
         width: 100%;
     }
@@ -987,17 +1007,204 @@ footer {
         top: calc((170px - 20px) / 2);
         right: -3px;
         z-index: 2;
+        cursor: pointer;
     }
 
-    .houses-arrow {
+    .houses-arrow, .dest-arrow-s-up {
         height: 24px;
         width: 24px;
+    }
+
+    /* destinations */
+    .dest-card-button {
+        display: none;
+    }
+
+    .dest-buttons {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+    }
+
+    .dest-button {
+        border-style: solid;
+        border-radius: 4px;
+        border-width: 1px;
+        border-color: var(--main-stroke);
+        background-color: white;
+        font-size: 19px;
+        width: 30%;
+        height: 30px;
+    }
+
+    .dest-button-places-m {
+        display: none;
+    }
+
+    .dest-arrow {
+        display: none;
+        position: absolute;
+    }
+
+    .dest-arrow-s {
+        display: block;
+        width: 0;
+        top: calc((150px - 20px) / 2);
+        right: 15px;
+    }
+
+    .dest-card:hover .dest-card-shadow {
+        display: none;
+    }
+
+    /* reviews */
+    .reviews {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+
+    .reviews-s {
+        background-color: var(--main-bg);
+    }
+
+    .reviews-title-s {
+        display: none;
+    }
+
+    .reviews-title {
+        text-transform: capitalize;
+    }
+
+    .reviews-card {
+        border-style: none;
+    }
+
+    .reviews-card-user {
+        height: 45px;
+    }
+
+    .reviews-card-user-ico {
+        width: 45px;
+    }
+
+    .rev-card-info-hotel, .rev-card-info-rating {
+        margin-top: 12px;
+    }
+
+    .reviews-card-img {
+        height: 300px;
+        width: 100%;
+    }
+
+    .reviews-arrow-up, .reviews-card-cost {
+        display: none;
+    }
+
+    .reviews-card-info {
+        padding: 0;
+        font-size: 15px;
+    }
+
+    .reviews-card-review, .rev-card-info-rating, .reviews-card-user-info-location, .reviews-card-user-info-name {
+        font-size: 15px;
+    }
+
+    .rev-card-info-destinations {
+        margin: 0;
+    }
+
+    .rev-card-info-rating {
+        width: 40px;
+        height: 25px;
+    }
+
+    .rev-card-info-views {
+        font-size: 12px;
+    }
+
+    h5 {
+        font-size: 15px;
+    }
+
+    .rev-registration {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        height: 100px;
+        max-width: 400px;
+        padding: 0 15px 0 15px;
+    }
+
+    .rev-registration-ico {
+        display: none;
+    }
+
+    .rev-registration-x {
+        width: 16px;
+        margin: 15px;
+        align-self: center;
+        border-style: none;
+    }
+
+    .rev-registration-ico-s {
+        display: block;
+        width: 55px;
+        height: 55px;
+        background-color: var(--primary);
+        border-radius: 4px;
+        padding: 2px;
+        flex-shrink: 0
+    }
+
+    .rev-registration-text {
+        font-size: 12px;
+        margin-left: 15px;
+    }
+
+    .rev-registration-button {
+        display: none;
+    }
+
+    .rev-registration-s-install {
+        display: block;
+        font-weight: 500;
+        font-size: 14px;
+        color: var(--primary);
+        cursor: pointer;
+    }
+
+    .reviews-drops {
+        display: flex;
+        justify-content: center;
+    }
+
+    .reviews-drop{
+        width: 8px;
+        height: 8px;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 50%;
+        border-color: #333333;
+        margin: 2%
+    }
+
+    .reviews-drop:active, .reviews-drop:focus{
+        background-color: #333333;
     }
 
     /* footer */
     .footer-logo {
         display: block;
         text-align: center;
+    }
+
+    .footer-logo-width {
+        width: 100px;
+        height: 20px;
     }
 
     .f-size-content {
@@ -1021,11 +1228,11 @@ footer {
         text-align: center;
     }
 
-    .f-l-content {
+    .footer-list-content {
         display: none;
     }
 
-    .footer-copywriting {
+    .footer-copyright {
         font-size: 12px;
         text-align: center;
     }

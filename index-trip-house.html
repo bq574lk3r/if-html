@@ -309,17 +309,16 @@
     </div>
 </section>
 <section class="destinations">
-    <h2 class="destinations-title">The best destinations</h2>
     <div>
-        <div class="dest-buttons col-6">
+        <h2 class="destinations-title">The best destinations</h2>
+        <div class="dest-buttons col-6 col-s-6">
             <button class="dest-button">Regions</button>
             <button class="dest-button">Cities</button>
-            <button class="dest-button">Places of interest</button>
+            <button class="dest-button">Places <span class="dest-button-places-m">of interest</span></button>
         </div>
         <div>
             <div class="dest-cards col-12 col-s-6">
-                <div class="dest-card">
-
+                <div class="dest-card col-s-3">
                     <div class="dest-card-button-position">
                         <button class="dest-card-button">Book now</button>
                     </div>
@@ -327,7 +326,7 @@
                     <div class="dest-card-shadow"></div>
                     <h4 class="dest-card-text">Maldives</h4>
                 </div>
-                <div class="dest-card">
+                <div class="dest-card col-s-3">
                     <div class="dest-card-button-position">
                         <button class="dest-card-button">Book now</button>
                     </div>
@@ -351,139 +350,153 @@
                     <div class="dest-card-shadow"></div>
                     <h4 class="dest-card-text">Island</h4>
                 </div>
+                <div class="dest-arrow-s">
+                    <svg class="dest-arrow-s-up">
+                        <use href="#arrow"/>
+                    </svg>
+                </div>
             </div>
             <div class="dest-arrow">
                 <svg class="dest-arrow-down">
-                    <use class="d-ar" href="#arrow"/>
+                    <use href="#arrow"/>
                 </svg>
             </div>
         </div>
     </div>
-    <div class="dest-registration">
-        <div class="dest-registration-left">
-            <svg class="dest-registration-ico">
+</section>
+<section class="reviews">
+    <div class="rev-registration">
+        <p class="rev-registration-s-install">Install</p>
+        <div class="rev-registration-left">
+            <svg class="rev-registration-ico-s">
+                <use href="#footer-logo"/>
+            </svg>
+            <svg class="rev-registration-ico">
                 <use href="#sign-up"/>
             </svg>
             <div>
-                <p class="dest-registration-text">Sign up and get 20% off your first booking</p>
-                <button class="dest-registration-button">Sign up</button>
+                <p class="rev-registration-text">Sign up and get 20% off your first booking</p>
+                <button class="rev-registration-button">Sign up</button>
             </div>
         </div>
-        <svg class="dest-registration-x">
+        <svg class="rev-registration-x">
             <use href="#x"/>
         </svg>
     </div>
-</section>
-<section class="reviews">
-    <h2 class="reviews-title">Guests reviews</h2>
-    <div class="reviews-cards">
-        <div class="reviews-card">
-            <div class="reviews-card-cost"><p>From 33 USD</p></div>
-            <img class="reviews-card-img" src="img/hotels/overlook.jpg" alt="Overlook">
-            <div class="reviews-card-info">
-                <div class="reviews-card-signature">
-                    <div class="reviews-card-signature-left">
-                        <h5 class="rev-card-info-hotel">Overlook</h5>
-                        <p class="rev-card-info-destinations">Oregon, USA</p>
-                    </div>
-                    <div class="reviews-card-signature-right">
-                        <div class="rev-card-info-rating"><p>6,6</p></div>
-                        <div class="rev-card-info-views"><span>1744</span>&nbsp;reviews</div>
-                    </div>
-                </div>
-                <div class="reviews-card-user">
-                    <svg class="reviews-card-user-ico">
-                        <use href="#account-reviews"/>
-                    </svg>
-                    <div class="reviews-card-user-info">
-                        <p class="reviews-card-user-info-name">Danny Torrance</p>
-                        <div class="reviews-card-user-info-location">
-                            <img src="icon/usa.png" alt="USA flag">
-                            <span>USA</span>
+    <div class="reviews-s">
+        <h2 class="reviews-title"><span class="reviews-title-s">Guests&nbsp;</span>reviews</h2>
+        <div class="reviews-cards">
+            <div class="reviews-card">
+                <div class="reviews-card-cost"><p>From 33 USD</p></div>
+                <img class="reviews-card-img" src="img/hotels/overlook.jpg" alt="Overlook">
+                <div class="reviews-card-info">
+                    <div class="reviews-card-signature">
+                        <div class="reviews-card-signature-left">
+                            <h5 class="rev-card-info-hotel">Overlook</h5>
+                            <p class="rev-card-info-destinations">Oregon, USA</p>
+                        </div>
+                        <div class="reviews-card-signature-right">
+                            <div class="rev-card-info-rating"><p>6,6</p></div>
+                            <div class="rev-card-info-views"><span>1744</span>&nbsp;reviews</div>
                         </div>
                     </div>
-                </div>
-                <p class="reviews-card-review">
-                    Great location, really nice and clean rooms, but what makes this place so good is the staff. Even
-                    once
-                    Writer
-                    Jack Torrance was hired as a hotel caretaker. If you are going to go to this hotel, do not take your
-                    wife
-                    and children with you.
-                </p>
-            </div>
-        </div>
-        <div class="reviews-card">
-            <div class="reviews-card-cost"><p>From 40 USD</p></div>
-            <img class="reviews-card-img" src="img/hotels/king-kong_hostel.jpg" alt="King-Kong hostel">
-            <div class="reviews-card-info">
-                <div class="reviews-card-signature">
-                    <div class="reviews-card-signature-left">
-                        <h5 class="rev-card-info-hotel">King Kong Hostel</h5>
-                        <p class="rev-card-info-destinations">Rotterdam, Netherlands</p>
-                    </div>
-                    <div class="reviews-card-signature-right">
-                        <div class="rev-card-info-rating"><p>8,9</p></div>
-                        <div class="rev-card-info-views"><span>2016</span>&nbsp;reviews</div>
-                    </div>
-                </div>
-                <div class="reviews-card-user">
-                    <svg class="reviews-card-user-ico">
-                        <use href="#account-reviews"/>
-                    </svg>
-                    <div class="reviews-card-user-info">
-                        <p class="reviews-card-user-info-name">Adam Smith</p>
-                        <div class="reviews-card-user-info-location">
-                            <img src="icon/usa.png" alt="USA flag">
-                            <span>USA</span>
+                    <div class="reviews-card-user">
+                        <svg class="reviews-card-user-ico">
+                            <use href="#account-reviews"/>
+                        </svg>
+                        <div class="reviews-card-user-info">
+                            <p class="reviews-card-user-info-name">Danny Torrance</p>
+                            <div class="reviews-card-user-info-location">
+                                <img src="icon/usa.png" alt="USA flag">
+                                <span>USA</span>
+                            </div>
                         </div>
                     </div>
+                    <p class="reviews-card-review">
+                        Great location, really nice and clean rooms, but what makes this place so good is the staff.
+                        Even once Writer Jack Torrance was hired as a hotel caretaker. If you are going to go to this
+                        hotel, do not take your wife and children with you.
+                    </p>
                 </div>
-                <p class="reviews-card-review">
-                    I've been in this hostel for a month and here is the best hostel of all
-                    Excellent management of excellent and ethical staff and bedrooms Bathrooms are always clean and
-                    excellent
-                    Most importantly, those who work here are kind and good-natured.
-                </p>
             </div>
-        </div>
-        <div class="reviews-card">
-            <div class="reviews-card-cost"><p>From 100 USD</p></div>
-            <img class="reviews-card-img" src="img/hotels/rokoko_hotel.jpg" alt="Rokoko Hotel">
-            <div class="reviews-card-info">
-                <div class="reviews-card-signature">
-                    <div class="reviews-card-signature-left">
-                        <h5 class="rev-card-info-hotel">Rokoko Hotel</h5>
-                        <p class="rev-card-info-destinations">Ourika, Marocco</p>
-                    </div>
-                    <div class="reviews-card-signature-right">
-                        <div class="rev-card-info-rating"><p>9,1</p></div>
-                        <div class="rev-card-info-views"><span>815</span>&nbsp;reviews</div>
-                    </div>
-                </div>
-                <div class="reviews-card-user">
-                    <svg class="reviews-card-user-ico">
-                        <use href="#account-reviews"/>
-                    </svg>
-                    <div class="reviews-card-user-info">
-                        <p class="reviews-card-user-info-name">Anika Messer</p>
-                        <div class="reviews-card-user-info-location">
-                            <img src="icon/germany.png" alt="Germany flag">
-                            <span>Germany</span>
+            <div class="reviews-card col-s-0">
+                <div class="reviews-card-cost"><p>From 40 USD</p></div>
+                <img class="reviews-card-img" src="img/hotels/king-kong_hostel.jpg" alt="King-Kong hostel">
+                <div class="reviews-card-info">
+                    <div class="reviews-card-signature">
+                        <div class="reviews-card-signature-left">
+                            <h5 class="rev-card-info-hotel">King Kong Hostel</h5>
+                            <p class="rev-card-info-destinations">Rotterdam, Netherlands</p>
+                        </div>
+                        <div class="reviews-card-signature-right">
+                            <div class="rev-card-info-rating"><p>8,9</p></div>
+                            <div class="rev-card-info-views"><span>2016</span>&nbsp;reviews</div>
                         </div>
                     </div>
+                    <div class="reviews-card-user">
+                        <svg class="reviews-card-user-ico">
+                            <use href="#account-reviews"/>
+                        </svg>
+                        <div class="reviews-card-user-info">
+                            <p class="reviews-card-user-info-name">Adam Smith</p>
+                            <div class="reviews-card-user-info-location">
+                                <img src="icon/usa.png" alt="USA flag">
+                                <span>USA</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="reviews-card-review">
+                        I've been in this hostel for a month and here is the best hostel of all
+                        Excellent management of excellent and ethical staff and bedrooms Bathrooms are always clean and
+                        excellent
+                        Most importantly, those who work here are kind and good-natured.
+                    </p>
                 </div>
-                <p class="reviews-card-review">
-                    Efficient, friendly, professional, and appropriately attentive. Great hotel in a great location.
-                    Easy access to all the surrounding historical sites. Staff is fantastic. Will definitely stay at
-                    this location during my next stay in Marocco.
-                </p>
+            </div>
+            <div class="reviews-card col-s-0">
+                <div class="reviews-card-cost"><p>From 100 USD</p></div>
+                <img class="reviews-card-img" src="img/hotels/rokoko_hotel.jpg" alt="Rokoko Hotel">
+                <div class="reviews-card-info">
+                    <div class="reviews-card-signature">
+                        <div class="reviews-card-signature-left">
+                            <h5 class="rev-card-info-hotel">Rokoko Hotel</h5>
+                            <p class="rev-card-info-destinations">Ourika, Marocco</p>
+                        </div>
+                        <div class="reviews-card-signature-right">
+                            <div class="rev-card-info-rating"><p>9,1</p></div>
+                            <div class="rev-card-info-views"><span>815</span>&nbsp;reviews</div>
+                        </div>
+                    </div>
+                    <div class="reviews-card-user">
+                        <svg class="reviews-card-user-ico">
+                            <use href="#account-reviews"/>
+                        </svg>
+                        <div class="reviews-card-user-info">
+                            <p class="reviews-card-user-info-name">Anika Messer</p>
+                            <div class="reviews-card-user-info-location">
+                                <img src="icon/germany.png" alt="Germany flag">
+                                <span>Germany</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="reviews-card-review">
+                        Efficient, friendly, professional, and appropriately attentive. Great hotel in a great location.
+                        Easy access to all the surrounding historical sites. Staff is fantastic. Will definitely stay at
+                        this location during my next stay in Marocco.
+                    </p>
+                </div>
+            </div>
+            <div class="reviews-arrow-up">
+                <svg class="reviews-arrow">
+                    <use href="#arrow"/>
+                </svg>
             </div>
         </div>
-        <div class="reviews-arrow-up">
-            <svg class="reviews-arrow">
-                <use href="#arrow"/>
-            </svg>
+        <div class="reviews-drops">
+            <div class="reviews-drop"></div>
+            <div class="reviews-drop"></div>
+            <div class="reviews-drop"></div>
+            <div class="reviews-drop"></div>
         </div>
     </div>
 </section>
@@ -491,34 +504,34 @@
 <footer>
     <div class="footer-size-content">
         <div class="footer-logo">
-            <svg width="100" height="20">
+            <svg class="footer-logo-width">
                 <use href="#footer-logo"/>
             </svg>
         </div>
         <div class="footer-lists">
             <div class="footer-list col-4">
                 <h3>About</h3>
-                <p class="f-l-content">How TripHouse works</p>
-                <p class="f-l-content">Careers</p>
-                <p class="f-l-content">Privacy</p>
-                <p class="f-l-content">Terms</p>
+                <p class="footer-list-content">How TripHouse works</p>
+                <p class="footer-list-content">Careers</p>
+                <p class="footer-list-content">Privacy</p>
+                <p class="footer-list-content">Terms</p>
             </div>
             <div class="footer-list col-4 col-s-4">
                 <h3>Property types</h3>
-                <p class="f-l-content">Guest houses</p>
-                <p class="f-l-content">Hotels</p>
-                <p class="f-l-content">Apartments</p>
-                <p class="f-l-content">Villas</p>
-                <p class="f-l-content">Holiday homes</p>
-                <p class="f-l-content">Hostels</p>
+                <p class="footer-list-content">Guest houses</p>
+                <p class="footer-list-content">Hotels</p>
+                <p class="footer-list-content">Apartments</p>
+                <p class="footer-list-content">Villas</p>
+                <p class="footer-list-content">Holiday homes</p>
+                <p class="footer-list-content">Hostels</p>
             </div>
             <div class="footer-list col-4">
                 <h3>Support</h3>
-                <p class="f-l-content">Contact Customer Service</p>
-                <p class="f-l-content">FAQ</p>
+                <p class="footer-list-content">Contact Customer Service</p>
+                <p class="footer-list-content">FAQ</p>
             </div>
         </div>
-        <div class="footer-copywriting">
+        <div class="footer-copyright">
             <p>&copy; 2020 TripHouse, Inc. All rights reserved</p>
         </div>
     </div>
